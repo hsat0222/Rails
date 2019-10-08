@@ -1087,3 +1087,124 @@ Processing by TodolistsController#edit as HTML
 Completed 200 OK in 98ms (Views: 71.8ms | ActiveRecord: 3.1ms)
 
 
+Started GET "/todolists/1" for 10.0.2.2 at 2019-10-08 12:34:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (2.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:23
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 486ms (Views: 455.4ms | ActiveRecord: 4.7ms)
+
+
+Started DELETE "/todolists/1" for 10.0.2.2 at 2019-10-08 12:34:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LIz3nQLWmLUqhyqIw5q/by1NnjJXUCrIwzKsH0oG8+Q3Qpdi6oSfr4OMeL38WGc0nYSnynkMxT/RiupzBYxjjg==", "id"=>"1"}
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:38
+  [1m[36mList Destroy (2.2ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/todolists_controller.rb:38
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:38
+Redirected to http://localhost:3000/todolists
+Completed 302 Found in 10ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/todolists" for 10.0.2.2 at 2019-10-08 12:34:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 108ms (Views: 92.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/attachments/96b4d8f26ee7ae49cb5b6efd5a291e2adaef2285/store/fill/100/100/597159b94fbed78484a677102ee546000b15676c7b3e9c23ca8b15685826/image.jpeg" for 10.0.2.2 at 2019-10-08 12:34:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/ef6ab4ae97d7d9ff54802efcb7f204302b67897b/store/fill/100/100/0a843859f2d9effdc926cb0cc15ed6ef72c3cc7dae9e4d5ef25eafb32053/image.jpeg" for 10.0.2.2 at 2019-10-08 12:34:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2019-10-08 12:34:55 +0000] GET "/96b4d8f26ee7ae49cb5b6efd5a291e2adaef2285/store/fill/100/100/597159b94fbed78484a677102ee546000b15676c7b3e9c23ca8b15685826/image.jpeg" 200 52.3ms
+
+Refile::App: [2019-10-08 12:34:55 +0000] GET "/ef6ab4ae97d7d9ff54802efcb7f204302b67897b/store/fill/100/100/0a843859f2d9effdc926cb0cc15ed6ef72c3cc7dae9e4d5ef25eafb32053/image.jpeg" 200 67.4ms
+
+Started GET "/todolists/6" for 10.0.2.2 at 2019-10-08 12:35:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:23
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 78ms (Views: 64.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/todolists/6" for 10.0.2.2 at 2019-10-08 12:35:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wIAEYCX7jWDsq5ix3wwQ2TXulYQefMLfOZdknbFUgW/bTmSfzamKekWgyoTgzsiChSesfDAgLSgrLyLx/t4RBQ==", "id"=>"6"}
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:38
+  [1m[36mList Destroy (1.9ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/todolists_controller.rb:38
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:38
+Redirected to http://localhost:3000/todolists
+Completed 302 Found in 11ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/todolists" for 10.0.2.2 at 2019-10-08 12:35:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.7ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 98ms (Views: 86.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/todolists/5" for 10.0.2.2 at 2019-10-08 12:35:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mList Load (2.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:23
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 89ms (Views: 72.2ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/todolists/5" for 10.0.2.2 at 2019-10-08 12:35:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fkq4HmbG67IzrxNeqNb9HSWOkwBPzKI7x2V7W51aCxNlhNjhjpTsqJqkQWuXFCVGlUeq+GGQTczV3T030tCbeQ==", "id"=>"5"}
+  [1m[36mList Load (1.1ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:38
+  [1m[36mList Destroy (2.8ms)[0m  [1m[31mDELETE FROM "lists" WHERE "lists"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/todolists_controller.rb:38
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:38
+Redirected to http://localhost:3000/todolists
+Completed 302 Found in 15ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/todolists" for 10.0.2.2 at 2019-10-08 12:35:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TodolistsController#index as HTML
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.5ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 85ms (Views: 73.5ms | ActiveRecord: 0.5ms)
+
+
